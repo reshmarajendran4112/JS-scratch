@@ -1,0 +1,13 @@
+
+[{
+    "name" : "Reshma",
+    "age" : 23,
+    "isProgrammer" : true
+   
+},
+{
+    "name" : "Jagadheeswaran",
+    "age" : 25,
+    "isProgrammer" : false
+  
+}]

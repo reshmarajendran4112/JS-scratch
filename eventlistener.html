@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>EventListener</h1>
+    <p id="inner"></p>
+    <button id="myBtn">View</button>
+</body>
+<script>
+    document.getElementById("myBtn").addEventListener("click", listener);
+    
+    function listener(){
+        // document.getElementById("inner").innerHTML="Welcome to website" + " " + Date();
+        alert("Welcome to website" + " " + Date());
+    }
+</script>
+</html>

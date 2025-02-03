@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello Dorry</h1>
+    <p id="parse"></p>
+    <button onclick="myFunc()">Click Here</button>
+</body>
+<script>
+
+const employees = `[ {"name":"Janu", "age":23, "isprogrammer":true, "empId":123},
+                    {"name":"Renu", "age":45, "isprogrammer":false, "empId":456},
+                    {"name":"Jaga", "age":27, "isprogrammer":true, "empId":321},
+                    {"name":"Reshu", "age":22, "isprogrammer":true, "empId":244}]`;
+
+const parseData = JSON.parse(employees);
+document.getElementById("parse").innerHTML = parseData[0].isprogrammer;
+
+function myFunc(){
+    alert("This is an alert message !!!");
+}
+
+</script>
+</html>

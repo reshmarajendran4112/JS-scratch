@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Event listener using multi function</h1>
+    <p id="innerfunc">Welcome you to event listener using multi function</p>
+    <button id="addBtn">CLICK HERE</button>
+</body>
+<script>
+    var x = document.getElementById("addBtn");
+    x.addEventListener("mouseover",myFirst);
+    x.addEventListener("click",mySecond);
+    x.addEventListener("mouseout",myThird);
+
+    function myFirst(){
+       document.getElementById("innerfunc").innerHTML += "Wellcome!!<br>";
+    }
+
+    function mySecond(){
+        document.getElementById("innerfunc").innerHTML += "Hi Helloooo!!<br>";
+    }
+
+    function myThird(){
+        document.getElementById("innerfunc").innerHTML += "Bye!!<br>";
+        
+    }
+</script>
+</html>

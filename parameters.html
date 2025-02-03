@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="inner"></p>
+    <button id="para">Multiplication</button>
+</body>
+<script>
+    let a = 10;
+    let b = 20;
+    document.getElementById("para").addEventListener("click",function() {
+        myFun(a,b);
+    });
+
+    function myFun(a,b){
+        document.getElementById("inner").innerHTML = a*b;
+    }
+</script>
+</html>
